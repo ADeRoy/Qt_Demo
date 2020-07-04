@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>593</width>
+    <height>457</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>593</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <addaction name="newActiona"/>
+    <addaction name="actiona_new"/>
+    <addaction name="actiona_open"/>
+    <addaction name="actiona_saveFile"/>
+    <addaction name="actiona_save"/>
+    <addaction name="separator"/>
+    <addaction name="actiona_Painter"/>
+    <addaction name="action_PrintPreview"/>
+    <addaction name="action_pdf"/>
+    <addaction name="separator"/>
+    <addaction name="actiona_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(E)</string>
+    </property>
+    <addaction name="actiona_cat"/>
+    <addaction name="actiona_copy"/>
+    <addaction name="actiona_paste"/>
+    <addaction name="separator"/>
+    <addaction name="actiona_find"/>
+    <addaction name="separator"/>
+    <addaction name="actiona_all"/>
+    <addaction name="actiona_data"/>
+   </widget>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>格式(O)</string>
+    </property>
+    <addaction name="actiona_auto"/>
+    <addaction name="actiona_font"/>
+   </widget>
+   <widget class="QMenu" name="menu_V">
+    <property name="title">
+     <string>查看(V)</string>
+    </property>
+    <addaction name="actiona_24"/>
+    <addaction name="actiona_25"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(H)</string>
+    </property>
+    <addaction name="actiona_CSDN"/>
+    <addaction name="actiona_26"/>
+    <addaction name="actiona_about"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_O"/>
+   <addaction name="menu_V"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="newActiona"/>
+   <addaction name="openAction"/>
+   <addaction name="saveAction"/>
+   <addaction name="undoAction"/>
+   <addaction name="actionRedo"/>
+   <addaction name="findAction"/>
+   <addaction name="actiona_font"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="newActiona">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/file_new.png</normaloff>:/src/file_new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actiona_new">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/view_zoom.png</normaloff>:/src/view_zoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>新窗口(M)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="actiona_open">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/file_open.png</normaloff>:/src/file_open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actiona_saveFile">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/file_save.png</normaloff>:/src/file_save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actiona_save">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/file_saveas.png</normaloff>:/src/file_saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为(A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actiona_Painter">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/file_print.png</normaloff>:/src/file_print.png</iconset>
+   </property>
+   <property name="text">
+    <string>打印(P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actiona_exit">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/close.png</normaloff>:/src/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出(X)</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/editredo.png</normaloff>:/src/editredo.png</iconset>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="toolTip">
+    <string>返回</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actiona_cat">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/editcut.png</normaloff>:/src/editcut.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪贴(T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actiona_copy">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/editcopy.png</normaloff>:/src/editcopy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制(C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actiona_paste">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/editpaste.png</normaloff>:/src/editpaste.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴(P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actiona_find">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/edit_find_n.png</normaloff>:/src/edit_find_n.png</iconset>
+   </property>
+   <property name="text">
+    <string>查找(F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actiona_all">
+   <property name="text">
+    <string>全选(A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actiona_data">
+   <property name="text">
+    <string>时间/日期(D)</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="actiona_auto">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>自动换行(W)</string>
+   </property>
+  </action>
+  <action name="actiona_font">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/form_font.png</normaloff>:/src/form_font.png</iconset>
+   </property>
+   <property name="text">
+    <string>字体(F)</string>
+   </property>
+  </action>
+  <action name="actiona_24">
+   <property name="text">
+    <string>缩放(Z)</string>
+   </property>
+  </action>
+  <action name="actiona_25">
+   <property name="text">
+    <string>状态栏(S)</string>
+   </property>
+  </action>
+  <action name="actiona_26">
+   <property name="text">
+    <string>查看帮助(H)</string>
+   </property>
+  </action>
+  <action name="actiona_CSDN">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/deroy.jpg</normaloff>:/src/deroy.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>技术支持(F)</string>
+   </property>
+  </action>
+  <action name="actiona_about">
+   <property name="text">
+    <string>关于记事本(A)</string>
+   </property>
+  </action>
+  <action name="saveAction">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/file_save.png</normaloff>:/src/file_save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="undoAction">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/editundo.png</normaloff>:/src/editundo.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="findAction">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/edit_find_n.png</normaloff>:/src/edit_find_n.png</iconset>
+   </property>
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+  <action name="action_PrintPreview">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/fileprint.png</normaloff>:/src/fileprint.png</iconset>
+   </property>
+   <property name="text">
+    <string>打印预览</string>
+   </property>
+  </action>
+  <action name="action_pdf">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/exportpdf.png</normaloff>:/src/exportpdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为pdf</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="openAction">
+   <property name="icon">
+    <iconset resource="src.qrc">
+     <normaloff>:/src/file_open.png</normaloff>:/src/file_open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>
