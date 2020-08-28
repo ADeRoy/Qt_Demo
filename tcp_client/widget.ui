@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>496</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>30</y>
+     <width>491</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>数据接收</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextBrowser" name="textBrowserRecv">
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+    border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: transparent;
+	border: 1px solid #3498db;
+}
+QTextEdit:focus {
+    border: 2px solid #3498db;
+}
+QTextEdit:!enabled {
+    color: #525252; 
+} </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>280</y>
+     <width>491</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>数据发送</string>
+   </property>
+   <widget class="QPushButton" name="pushButtonSend">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>20</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-radius: 5px;	
+	background-color: rgb(6, 163, 220);
+}
+
+QPushButton:hover{
+	background-color: rgb(16, 196, 245);
+}
+
+QPushButton:pressed {
+	background-color: rgb(3, 130, 176);
+}</string>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditSend">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>20</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+    border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: transparent;
+	border: 1px solid #3498db;
+}
+QTextEdit:focus {
+    border: 2px solid #3498db;
+}
+QTextEdit:!enabled {
+    color: #525252; 
+} </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>0</y>
+     <width>401</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>服务器ip地址：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditAddress">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+    border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: transparent;
+	border: 2px solid #3498db;
+}</string>
+      </property>
+      <property name="inputMask">
+       <string>000.000.000.000</string>
+      </property>
+      <property name="text">
+       <string>169.254.164.127</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>服务器端口号：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditPort">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+    border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: transparent;
+	border: 2px solid #3498db;
+}</string>
+      </property>
+      <property name="text">
+       <string>8080</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButtonConnect">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>0</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-radius: 5px;	
+	background-color: rgb(6, 163, 220);
+}
+
+QPushButton:hover{
+	background-color: rgb(16, 196, 245);
+}
+
+QPushButton:pressed {
+	background-color: rgb(3, 130, 176);
+}</string>
+   </property>
+   <property name="text">
+    <string>连接服务器</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

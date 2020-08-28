@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>509</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_listen">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>20</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-radius: 5px;	
+	background-color: rgb(6, 163, 220);
+}
+
+QPushButton:hover{
+	background-color: rgb(16, 196, 245);
+}
+
+QPushButton:pressed {
+	background-color: rgb(3, 130, 176);
+}</string>
+   </property>
+   <property name="text">
+    <string>监听</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget_client">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>60</y>
+     <width>141</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListWidget {
+    border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: transparent;
+	border: 2px solid #3498db;
+}
+QTextEdit:!enabled {
+    color: #525252; 
+} </string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser_recv">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>331</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: transparent;
+	border: 1px solid #3498db;
+}
+QTextEdit:focus {
+    border: 2px solid #3498db;
+}
+QTextEdit:!enabled {
+    color: #525252; 
+} </string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_send">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPlainTextEdit {
+	border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: transparent;
+	border: 1px solid #3498db;
+}
+QPlainTextEdit:focus {
+    border: 2px solid #3498db;
+}
+QPlainTextEdit:!enabled {
+    color: #525252; 
+} </string>
+   </property>
+   <property name="plainText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_send">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>342</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-radius: 5px;	
+	background-color: rgb(6, 163, 220);
+}
+
+QPushButton:hover{
+	background-color: rgb(16, 196, 245);
+}
+
+QPushButton:pressed {
+	background-color: rgb(3, 130, 176);
+}</string>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>181</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+  border:none;
+  color:#3498db;
+}</string>
+      </property>
+      <property name="text">
+       <string>本地端口号：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit_port">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+    border-style: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: transparent;
+	border: 2px solid #3498db;
+}</string>
+      </property>
+      <property name="text">
+       <string>8080</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>72</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  border:none;
+  color:#3498db;
+}</string>
+   </property>
+   <property name="text">
+    <string>本地IP地址：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Address">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+	color: rgb(255, 255, 255);
+	border-style: solid;
+	border-radius: 1px;	
+	background-color: rgb(6, 163, 220);
+}
+</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
