@@ -32,3 +32,7 @@
 
 ![](<https://mmbiz.qpic.cn/mmbiz_gif/rS7zDaAwbAtZicrWNcFfXnWn7ibOrSS6bwVooeVxUdBl06GvQEKgy1icoDfGm4mDDMMlZxibFguz0bX2RquLLmLO2w/0?wx_fmt=gif>)
 
+2020.8.30：`Md5单向加密`
+
+![](<https://mmbiz.qpic.cn/mmbiz_gif/rS7zDaAwbAvq9DTuDZxg8ryiaQeEkia1cEEkjZhcSxWIHPXPSZKV5yLq3pDTSK8wv7UEDvibfB9fUMSUjh5kruVRA/0?wx_fmt=gif>)
+
