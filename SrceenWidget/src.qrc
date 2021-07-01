@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>src/apple.ico</file>
+        <file>src/screenshot.png</file>
+    </qresource>
+</RCC>
