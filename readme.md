@@ -52,3 +52,6 @@ QThreadPool
 
 SrceenWidget
 
+### 2021.7.1：系统托盘+开机自启功能
+
+AutoRunSelf
