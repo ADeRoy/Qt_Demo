@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dog.jpg</file>
+        <file>arrow_down_normal.png</file>
+        <file>arrow_right_normal.png</file>
+        <file>blownbear.jpg</file>
+        <file>duolaameng.jpg</file>
+        <file>haimianbob.jpg</file>
+        <file>icebear.jpg</file>
+        <file>tom.jpg</file>
+        <file>xiaoxin.jpg</file>
+        <file>bianchenxuexijidi.jpg</file>
+    </qresource>
+</RCC>

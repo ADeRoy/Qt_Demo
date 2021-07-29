@@ -40,18 +40,34 @@
 
 ### 2020.9.6：`线程的同步和互斥`
 
-QThread_QMutex_Demo
+**QThread_QMutex_Demo**
 
-QThread_QWaitCondition_Demo
+**QThread_QWaitCondition_Demo**
 
 ### 2020.9.7：线程池
 
-QThreadPool
+**QThreadPool**
 
 ### 2021.7.1：仿微信截屏精简版
 
-SrceenWidget
+**SrceenWidget**
+
+![请添加图片描述](https://img-blog.csdnimg.cn/132204d3895f4ea68313c331f80f18d7.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTE5NDg0,size_16,color_FFFFFF,t_70)
 
 ### 2021.7.1：系统托盘+开机自启功能
 
-AutoRunSelf
+![请添加图片描述](https://img-blog.csdnimg.cn/9d56342a00874582a8cd305598bbe2e0.png)
+
+**AutoRunSelf**
+
+### 2021.7.29Qt抽屉效果
+
+**scrollArea-demo**
+
+![请添加图片描述](https://img-blog.csdnimg.cn/eee1c0c411cd4403a51bd9633be8fb01.jpg)
+
+自定义控件，可将QWidget提升为ToolBoxPow
+
+可自定义添加Widget
+
+可添加QQ效果WIdget
